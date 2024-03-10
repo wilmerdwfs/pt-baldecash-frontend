@@ -1,0 +1,43 @@
+.table_pagination_container{
+	display: flex;
+	justify-content: center;
+	height: 80px;
+}
+.table_pagination{
+	width: 508px;
+	border-top-right-radius: 24px;
+	border-top-left-radius: 24px;
+	display: grid;
+	grid-template-columns: 48px 48px 44px 48px 268px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	align-items: center;
+	box-shadow: 0px 3px 16px #AAAAAA4D;
+	gap: 12px;
+}
+.table_pagination__btn{
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	border: none;
+	color: #DD3542;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: white;
+}
+.middle{
+	color: #414141;
+	font-size: 20px !important;
+	font: normal normal normal 16px/20px Lato !important;
+}	
+.icon_previous{
+	transform: rotate(90deg);
+}
+.icon_next{
+	transform: rotate(270deg);
+}
+

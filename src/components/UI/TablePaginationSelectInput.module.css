@@ -1,0 +1,33 @@
+.column{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.label{
+	font-family: "Oswald", sans-serif;
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	color: #ABB9C7;
+	font-size: 12px;
+}
+.select{
+	appearance: none; /* Oculta la flecha en navegadores modernos */
+	width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 4px;
+	border: 1px solid #eeee;
+	font-size: 15px;
+	height: 56px;
+	font-size: 16px;
+	border: 1px solid #ABB9C780;
+	color: #414141 !important;
+}
+.icon_select{
+	position: absolute;
+	right: 12px;
+	transform: translateY(20px);
+	font-size: 24px;
+	color: #DD3542;
+}

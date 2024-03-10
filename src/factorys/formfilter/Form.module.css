@@ -1,0 +1,47 @@
+.column{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.label{
+	font-family: "Oswald", sans-serif;
+	font-size: 12px;
+	color: #ABB9C7;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+.input{
+	width:cal(100% - 16px);
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 4px;
+	border: 1px solid #eeee;
+	font-size: 15px;
+	height: 56px;
+	font: normal normal normal 16px/22px Open Sans;
+	border: 1px solid #ABB9C780;
+	color: #ABB9C7;
+}
+.select{
+	appearance: none; /* Oculta la flecha en navegadores modernos */
+}
+.icon_select{
+	position: absolute;
+	right: 12px;
+	transform: translateY(20px);
+	font-size: 24px;
+	color: #DD3542;
+}
+.input::placeholder {
+    color: #ABB9C7; 
+}
+.icon_date{
+	position: absolute;
+	right: 16px;
+	top: 20px;
+	font-size: 24px;
+	color: #DD3542;
+	background-color: white;
+}
+

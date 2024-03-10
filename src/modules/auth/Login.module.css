@@ -1,0 +1,18 @@
+.over_screen{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeee;
+}
+
+.login{
+	width: 1280px;
+	height: 804px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+    grid-template-rows: 148px auto 176px;
+    padding-top: 148px;
+}
+
+

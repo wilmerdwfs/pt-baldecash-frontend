@@ -1,0 +1,20 @@
+.tool_top_simple{
+	display: grid;
+	grid-template-columns: 72px 1fr 174px 72px;
+	align-items: center;
+}
+.title{
+   grid-column-start: 2;
+   color: #413E4D;
+   text-align: left;
+   font: normal normal bold 20px/27px Open Sans;
+}
+.button{
+   grid-column: 3;
+   background-color: #DD3542;
+	color: white;
+	border-radius: 24px;
+	width: 174px;
+   height: 48px;
+   border: none;
+}
