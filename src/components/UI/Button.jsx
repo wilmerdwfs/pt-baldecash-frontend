@@ -1,9 +1,10 @@
-import styles from './FormFields.module.css';
+import styles from './Button.module.css';
 import { AiOutlineVerticalAlignBottom } from "react-icons/ai";
+import LoadingMin from './LoadingMin';
 
-const SendButton = ({ text,  onChange }) => (
-  <button class={styles.button_general} onChange={onChange}>
-    <AiOutlineVerticalAlignBottom class={styles.button_general_icon} /> {text}
+const SendButton = ({ text, onClick,loading }) => (
+  <button class={styles.button_general} onClick={onClick}>
+    {loading && <LoadingMin/>}  {text}
   </button>
 );
 

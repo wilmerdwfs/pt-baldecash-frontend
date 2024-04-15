@@ -1,10 +1,10 @@
 import styles from './PanelTop.module.css'
 
-const PanelTop = ({children}) => {
+const PanelTop = ({contentLeft,contentRigth}) => {
    return (
-   	    <div className={styles.panel_top}>
-            {children}
-        </div>
+   	<div className={styles.panel_top}>
+         {contentLeft} {contentRigth}
+      </div>
     )
 }
 

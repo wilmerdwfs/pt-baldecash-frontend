@@ -1,0 +1,20 @@
+.button_action{
+	background-color: #DD3542;
+	color: white;
+	border-radius: 3px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn_delete_color{
+  background-color: red;
+}
+
+.btn_edit_color{
+   background-color: blue;
+}

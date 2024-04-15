@@ -1,17 +1,34 @@
-import Login from './modules/auth/Login'
-import ListView from './modules/mydisbursements/ListView'
-import Screen from './components/screen/Screen'
+import Login from './place/auth/Login'
+import Header from './components/header/Header'
 import './App.css';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route, Navigate} from 'react-router-dom'
+import Provider from './provider/Provider'
+import CreateUser from './place/users/CreateUser'
+import User from './place/users/User'
+import ProtectedRoute from './services/ProtectedRoute'
+import HelperBadRoute from './helpers/HelperBadRoute'
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path={'/pbt'} element={<Login/>} />
-        <Route path={'/pbt/login'} element={<Login/>} />
-        <Route path={'/pbt/misdesembolsos'} element={<Screen><ListView/></Screen>} />
-      </Routes>
+      <Provider>
+        <Routes>
+          <Route path={'/pt'} element={<Navigate to ='login/' />} />
+          <Route path={'/pt/login'} element={<Login/>} />
+          <Route path={'/pt/usuarios'} element={
+            <ProtectedRoute>
+              <Header/> 
+              <User/>
+            </ProtectedRoute>
+          } />
+          <Route path={'/pt/ruta-invalida'} element={
+            <ProtectedRoute>
+              <Header/> 
+              <HelperBadRoute/>
+            </ProtectedRoute>
+          } />
+        </Routes>
+      </Provider>
     </Router>
   );
 }

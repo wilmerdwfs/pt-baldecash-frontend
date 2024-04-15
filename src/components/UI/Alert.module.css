@@ -1,0 +1,17 @@
+.alert{
+	background-color: #FFB7C2;
+	padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+}
+.alert__p{
+   font-weight: bold;
+   color: red;
+}
+.alert__icon{
+   font-weight: bold;
+   color: red;
+   font-size: 30px;
+}

@@ -1,0 +1,6 @@
+.header__tool_right{
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	height: 100%;
+}

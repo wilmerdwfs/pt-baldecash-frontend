@@ -1,0 +1,13 @@
+.user__toggle{
+   width: 50px;
+   height: 50px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.user__toggle_icon{
+  font-size: 30px;
+}

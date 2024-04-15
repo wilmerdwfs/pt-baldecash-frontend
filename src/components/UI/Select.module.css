@@ -1,0 +1,15 @@
+.column{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.input{
+  width: calc(100% - 2px);
+  height: 60px;
+  border: 1px solid #eee;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 6px;
+  padding: 8px;
+  background-color: white;
+}
