@@ -10,13 +10,18 @@ const  useHttpGet = () => {
     const [token, setToken] = useState('');
     
     const postData = async (url,form) => {
-        const fvUser = fs.getToken()
+        let token = ''
+
+        if (fs.getToken()) {
+           const fvUser = fs.getToken()
+           token = fvUser.token
+        }
         
         const options = {
             method:'POST',
             headers:{
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${fvUser.token}`,
+                'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify(form)
         }

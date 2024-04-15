@@ -3,8 +3,8 @@ import useCloseSession from './useCloseSession'
 import { AiTwotoneLock } from "react-icons/ai"
 import LoadingMin from '../../components/UI/LoadingMin';
 
-const Toggle = ({loading}) => {
-	const {handleOnClickCloseSession} = useCloseSession()
+const Toggle = () => {
+	const {handleOnClickCloseSession,loading} = useCloseSession()
 
 	return (
       <div className={styles.user__toggle}>

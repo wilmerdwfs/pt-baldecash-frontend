@@ -28,7 +28,7 @@ const Login = () => {
                type={"password"}
             /> 
             {errorsForm[0] && <Alert text={errorsForm[0]} />}
-            <Button text="ENTAR" loading={loading}/>  
+            <Button text="ENTRAR" loading={loading}/>  
          </form>
       </div>
    )
